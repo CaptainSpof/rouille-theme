@@ -30,57 +30,52 @@ determine the exact padding."
 
 ;;
 (def-doom-theme doom-rouille
-  "A dark theme ported from VS Code's Rouille."
+  "A dark theme inspired by Doom's Rouge."
 
   ;; name        default   256       16
-  ((bg         '("#172030" nil       nil            )) ;; modified
-   (bg-alt     '("#172030" nil       nil            ))
-   (base0      '("#070A0E" "black"   "black"        ))
-   (base1      '("#0E131D" "#1e1e1e" "brightblack"  ))
-   (base2      '("#151D2B" "#2e2e2e" "brightblack"  ))
-   (base3      '("#1F2A3F" "#262626" "brightblack"  ))
-   (base4      '("#5D636E" "#3f3f3f" "brightblack"  ))
-   (base5      '("#64727d" "#64727d" "brightblack"  ))
-   ;; (base6      '("#B16E75" "#6b6b6b" "brightblack"  ))
-   (base6      '("#646464" "#6b6b6b" "brightblack"  ))
-   (base7      '("#E8E9EB" "#979797" "brightblack"  ))
-   (base8      '("#F0F4FC" "#dfdfdf" "white"        ))
-   (fg         '("#FAFFF6"    "#bbb"    "white"        ))
-   (fg-alt     '("#A7ACB9" "#bfbfbf" "brightwhite"  ))
+  ((bg          '("#172030" nil       nil            )) ;; modified
+   (bg-alt      '("#172030" nil       nil            ))
+   (base0       '("#070A0E" "black"   "black"        ))
+   (base1       '("#0E131D" "#1e1e1e" "brightblack"  ))
+   (base2       '("#151D2B" "#2e2e2e" "brightblack"  ))
+   (base3       '("#1F2A3F" "#262626" "brightblack"  ))
+   (base4       '("#5D636E" "#3f3f3f" "brightblack"  ))
+   (base5       '("#64727d" "#64727d" "brightblack"  ))
+   (base6       '("#646464" "#6b6b6b" "brightblack"  ))
+   (base7       '("#E8E9EB" "#979797" "brightblack"  ))
+   (base8       '("#F0F4FC" "#dfdfdf" "white"        ))
+   (fg          '("#FAFFF6" "#bbb"    "white"        ))
+   (fg-alt      '("#A7ACB9" "#bfbfbf" "brightwhite"  ))
 
-   (grey       base5)
-   (red          '("#c6797e" "#c6797e" "red"          ))
-   (light-red    '("#DB6E8F" "#DB6E8F" "red"          ))
-   (orange       '("#eabe9a" "#eabe9a" "brightred"    ))
-   ;; (orange       '("#c26f56" "#c26f56" "brightred"    ))
-   (light-orange '("#c26f56" "#c26f56" "brightred" ))
-   ;; (light-orange '("#fda766" "#fda766" "brightred" ))
-   (green        '("#A3B09A" "#A3B9A4" "green"        ))
-   (teal         '("#7ea9a9" "#7ea9a9" "brightgreen"  ))
-   (yellow       '("#F7E3AF" "#F7E3AF" "yellow"       ))
-   (blue         '("#6e94b9" "#6e94b9" "brightblue"   ))
-   (dark-blue    '("#1E6378" "#1E6378" "blue"         ))
-   (magenta      '("#b18bb1" "#b18bb1" "magenta"      ))
-   ;; (salmon       '("#F9B5AC" "#F9B5AC" "orange"       ))
-   (salmon       '("#eb997f" "#eb997f" "orange"       ))
-   (violet       '("#5D80AE" "#5D80AE" "brightmagenta"))
-   (cyan         '("#88C0D0" "#88C0D0" "brightcyan"   ))
-   (dark-cyan    '("#507681" "#507681" "cyan"         ))
+   (grey       base5                                 )
+   (red         '("#c6797e" "#c6797e" "red"          ))
+   (light-red   '("#DB6E8F" "#DB6E8F" "red"          ))
+   (orange      '("#eabe9a" "#eabe9a" "brightred"    ))
+   (dark-orange '("#bd5631" "#bd5631" "brightred"    ))
+   (green       '("#A3B09A" "#A3B9A4" "green"        ))
+   (teal        '("#7ea9a9" "#7ea9a9" "brightgreen"  ))
+   (yellow      '("#F7E3AF" "#F7E3AF" "yellow"       ))
+   (blue        '("#6e94b9" "#6e94b9" "brightblue"   ))
+   (dark-blue   '("#1E6378" "#1E6378" "blue"         ))
+   (magenta     '("#b18bb1" "#b18bb1" "magenta"      ))
+   (salmon      '("#eb997f" "#eb997f" "orange"       ))
+   (violet      '("#5D80AE" "#5D80AE" "brightmagenta"))
+   (cyan        '("#88C0D0" "#88C0D0" "brightcyan"   ))
+   (dark-cyan   '("#507681" "#507681" "cyan"         ))
 
    ;; face categories -- required for all themes
    (highlight      orange)
-   ;; (highlight      base6)
    (vertical-bar   (doom-darken base1 0.2))
    (selection      base4)
-   (builtin        light-orange) ;;
+   (builtin        dark-orange) ;;
    (comments       grey)
    (doc-comments   green)
    (constants      orange) ;;
    (functions      salmon)
    (keywords       magenta)
-   (methods        light-orange) ;;
+   (methods        dark-orange) ;;
    (operators      magenta)
-   (type           orange) ;;
+   (type           red) ;;
    (strings        green)
    (variables      orange) ;;
    (numbers        red) ;;
